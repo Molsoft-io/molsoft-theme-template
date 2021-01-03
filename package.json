@@ -1,0 +1,14 @@
+{
+  "name": "molsoft-theme",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Molsoft",
+  "license": "MIT",
+  "devDependencies": {
+    "@shopify/babel-preset": "23.1.2",
+    "babel-core": "6.26.3"
+  },
+  "dependencies": {},
+  "scripts": {
+  }
+}

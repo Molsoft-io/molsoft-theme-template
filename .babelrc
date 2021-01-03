@@ -1,0 +1,9 @@
+{
+  "babel": {
+    "presets": [
+      ["@shopify/babel-preset/web", {
+        "browsers": ["last 3 versions"]
+      }]
+    ]
+  }
+}

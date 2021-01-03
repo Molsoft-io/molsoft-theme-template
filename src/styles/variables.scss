@@ -1,0 +1,216 @@
+
+
+// Text colors
+$color-announcement-text: var(--color-announcement-text);
+$color-header-text: var(--color-header-text);
+$color-main-text: var(--color-main-text);
+$color-main-primary-button-text: var(--color-main-primary-button-text);
+$color-main-secondary-button-text: var(--color-main-secondary-button-text);
+$color-section-text: var(--color-section-text);
+$color-section-primary-button-text: var(--color-section-primary-button-text);
+$color-section-secondary-button-text: var(--color-section-secondary-button-text);
+$color-bold-section-text: var(--color-bold-section-text);
+$color-bold-section-primary-button-text: var(--color-bold-section-primary-button-text);
+$color-bold-section-secondary-button-text: var(--color-bold-section-secondary-button-text);
+$color-footer-text: var(--color-footer-text);
+$color-product-card-type: var(--color-product-card-type);
+$color-product-card-title: var(--color-product-card-title);
+$color-product-card-vendor: var(--color-product-card-vendor);
+$color-product-card-description: var(--color-product-card-description);
+$color-product-card-price: var(--color-product-card-price);
+
+// Background colors
+$color-announcement-background: var(--color-announcement-background);
+$color-header-background: var(--color-header-background);
+$color-main-background: var(--color-main-background);
+$color-main-primary-button-background: var(--color-main-primary-button-background);
+$color-main-secondary-button-background: var(--color-main-secondary-button-background);
+$color-section-background: var(--color-section-background);
+$color-section-primary-button-background: var(--color-section-primary-button-background);
+$color-section-secondary-button-background: var(--color-section-secondary-button-background);
+$color-bold-section-background: var(--color-bold-section-background);
+$color-bold-section-primary-button-background: var(--color-bold-section-primary-button-background);
+$color-bold-section-secondary-button-background: var(--color-bold-section-secondary-button-background);
+$color-footer-background: var(--color-footer-background);
+
+//forms
+$color-main-form-border: var(--color-main-form-border);
+$color-main-form-background: var(--color-main-form-background);
+$color-main-form-text: var(--color-main-form-text);
+$color-section-form-border: var(--color-section-form-border);
+$color-section-form-background: var(--color-section-form-background);
+$color-section-form-text: var(--color-section-form-text);
+$color-bold-section-form-border: var(--color-bold-section-form-border);
+$color-bold-section-form-background: var(--color-bold-section-form-background);
+$color-bold-section-form-text: var(--color-bold-section-form-text);
+$color-footer-form-border: var(--color-footer-form-border);
+$color-footer-form-background: var(--color-footer-form-background);
+$color-footer-form-text: var(--color-footer-form-text);
+
+// Placeholders
+$placeholder-color-foreground: #161d25;
+$placeholder-color-background: #f9fafb;
+
+// Other colors
+$color-header-accent: var(--color-header-accent);
+$color-header-accent-text: var(--color-header-accent-text);
+$color-main-accent: var(--color-main-accent);
+$color-main-accent-text: var(--color-main-accent-text);
+$color-section-accent: var(--color-section-accent);
+$color-section-accent-text: var(--color-section-accent-text);
+$color-bold-section-accent: var(--color-bold-section-accent);
+$color-bold-section-accent-text: var(--color-bold-section-accent-text);
+
+$color-main-secondary-button-border: var(--color-main-secondary-button-border);
+$color-section-secondary-button-border: var(--color-section-secondary-button-border);
+$color-bold-section-secondary-button-border: var(--color-bold-section-secondary-button-border);
+
+$color-header-border: var(--color-header-border);
+$color-main-border: var(--color-main-border);
+$color-section-border: var(--color-section-border);
+$color-bold-section-border: var(--color-bold-section-border);
+$color-footer-border: var(--color-footer-border);
+
+// Helper colors for form error states
+$color-disabled: #000000;
+$color-disabled-border: #000000;
+$color-error: #ff6d6d;
+$color-error-bg: #ffffff;
+$color-success: #000000;
+$color-success-bg: #000000;
+
+// Typography
+$base-font: var(--base-font);
+$base-font-weight: var(--base-font-weight);
+$base-font-style: var(--base-font-style);
+$base-font-size: var(--base-font-size);
+$base-mobile-font-size: var(--base-mobile-font-size);
+
+$announcement-font: var(--announcement-font);
+$announcement-font-weight: var(--announcement-font-weight);
+$announcement-font-style: var(--announcement-font-style);
+$announcement-font-size: var(--announcement-font-size);
+$announcement-font-transform: var(--announcement-font-transform);
+
+$headings-font: var(--headings-font);
+$headings-font-weight: var(--headings-font-weight);
+$headings-font-style: var(--headings-font-style);
+$headings-font-size: var(--headings-font-size);
+$headings-font-transform: var(--headings-font-transform);
+
+$preheadings-font: var(--preheadings-font);
+$preheadings-font-weight: var(--preheadings-font-weight);
+$preheadings-font-style: var(--preheadings-font-style);
+$preheadings-font-size: var(--preheadings-font-size);
+$preheadings-font-transform: var(--preheadings-font-transform);
+
+$subheadings-font: var(--subheadings-font);
+$subheadings-font-weight: var(--subheadings-font-weight);
+$subheadings-font-style: var(--subheadings-font-style);
+$subheadings-font-size: var(--subheadings-font-size);
+$subheadings-font-transform: var(--subheadings-font-transform);
+
+$main-nav-font: var(--main-nav-font);
+$main-nav-font-weight: var(--main-nav-font-weight);
+$main-nav-font-style: var(--main-nav-font-style);
+$main-nav-font-size: var(--main-nav-font-size);
+$main-nav-font-transform: var(--main-nav-font-transform);
+
+$titles-font: var(--titles-font);
+$titles-font-weight: var(--titles-font-weight);
+$titles-font-style: var(--titles-font-style);
+$titles-font-size: var(--titles-font-size);
+$titles-font-transform: var(--titles-font-transform);
+
+$buttons-font: var(--buttons-font);
+$buttons-font-weight: var(--buttons-font-weight);
+$buttons-font-style: var(--buttons-font-style);
+$buttons-font-size: var(--buttons-font-size);
+$buttons-font-transform: var(--buttons-font-transform);
+
+$breadcrumb-font: var(--breadcrumb-font);
+$breadcrumb-font-weight: var(--breadcrumb-font-weight);
+$breadcrumb-font-style: var(--breadcrumb-font-style);
+$breadcrumb-font-size: var(--breadcrumb-font-size);
+$breadcrumb-font-transform: var(--breadcrumb-font-transform);
+
+$product-type-card-font: var(--product-type-card-font);
+$product-type-card-font-weight: var(--product-type-card-font-weight);
+$product-type-card-font-style: var(--product-type-card-font-style);
+$product-type-card-font-size: var(--product-type-card-font-size);
+$product-type-card-font-transform: var(--product-type-card-font-transform);
+
+$product-title-card-font: var(--product-title-card-font);
+$product-title-card-font-weight: var(--product-title-card-font-weight);
+$product-title-card-font-style: var(--product-title-card-font-style);
+$product-title-card-font-size: var(--product-title-card-font-size);
+$product-title-card-font-transform: var(--product-title-card-font-transform);
+
+$product-vendor-card-font: var(--product-vendor-card-font);
+$product-vendor-card-font-weight: var(--product-vendor-card-font-weight);
+$product-vendor-card-font-style: var(--product-vendor-card-font-style);
+$product-vendor-card-font-size: var(--product-vendor-card-font-size);
+$product-vendor-card-font-transform: var(--product-vendor-card-font-transform);
+
+$product-description-card-font: var(--product-description-card-font);
+$product-description-card-font-weight: var(--product-description-card-font-weight);
+$product-description-card-font-style: var(--product-description-card-font-style);
+$product-description-card-font-size: var(--product-description-card-font-size);
+$product-description-card-font-transform: var(--product-description-card-font-transform);
+
+$product-price-card-font: var(--product-price-card-font);
+$product-price-card-font-weight: var(--product-price-card-font-weight);
+$product-price-card-font-style: var(--product-price-card-font-style);
+$product-price-card-font-size: var(--product-price-card-font-size);
+$product-price-card-font-transform: var(--product-price-card-font-transform);
+
+//icons
+$icon-check: var(--icon-check);
+
+// Transitions
+$transition-duration: 250ms;
+$transition-timing: ease-in-out;
+
+// Border radius
+$buttons-border-radius: var(--buttons-border-radius);
+$forms-border-radius: var(--forms-border-radius);
+$blocks-border-radius: var(--blocks-border-radius);
+
+$sections-vertical-spacing: 4em;
+
+//bulma breakpoints
+$gap: 32px;
+$tablet: 769px;
+$desktop: 960px + (2 * $gap);
+$widescreen: 1152px + (2 * $gap);
+$fullhd: 1344px + (2 * $gap);
+
+
+// old grid system included in blank theme
+// // Grid
+// $grid-medium: 769px;
+// $grid-large: 1024px;
+// $grid-widescreen: 1216px;
+// $grid-max-width: 73.75em;
+// $grid-gutter: 30px;
+
+// // Breakpoints used with the media-query mixin
+// $small: 'small';
+// $medium: 'medium';
+// $medium-down: 'medium-down';
+// $medium-up: 'medium-up';
+// $large: 'large';
+// $large-down: 'large-down';
+// $large-up: 'large-up';
+// $widescreen: 'widescreen';
+
+// $breakpoints: (
+//   $small '(max-width: #{$grid-medium - 1})',
+//   $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
+//   $medium-down '(max-width: #{$grid-large - 1})',
+//   $medium-up '(min-width: #{$grid-medium})',
+//   $large '(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})',
+//   $large-down '(max-width: #{$grid-widescreen - 1})',
+//   $large-up '(min-width: #{$grid-large})',
+//   $widescreen '(min-width: #{$grid-widescreen})'
+// );
