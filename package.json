@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "molsoft-tools": "github:molsoft-io/molsoft-tools",
-    "multilingual-module": "githbub:molsoft-io/multilingual-module"
+    "multilingual-module": "github:molsoft-io/multilingual-module"
   },
   "scripts": {
     "translate": "multilingual-theme-converter"
