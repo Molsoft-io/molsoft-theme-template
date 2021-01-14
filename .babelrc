@@ -3,5 +3,6 @@
     ["@shopify/babel-preset/web", {
       "browsers": ["last 3 versions"]
     }]
-  ]
+  ],
+  "plugins": ["@babel/plugin-transform-runtime"]
 }

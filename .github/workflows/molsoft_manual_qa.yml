@@ -1,0 +1,71 @@
+name: Molsoft manual QA step
+
+on:
+  workflow_dispatch:
+
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          echo "$GITHUB_CONTEXT"
+   
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          
+      - uses: actions/setup-node@v2
+
+      - name: Install ThemeKit
+        run: curl -s https://shopify.github.io/themekit/scripts/install.py | sudo python
+
+      - uses: fregante/setup-git-token@v1
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: install molsoft-tools
+        run: sudo npm i -g molsoft-io/molsoft-tools --unsafe-perm=true
+        
+      - name: install dependencies
+        run: sudo npm i
+
+      - name: Deploy theme to QA
+        if: ${{ success() }}
+        run: molsoft-tools deploy --env=qa
+
+      - name: yamler
+        uses: juliojimenez/yamler@v0
+        id: yamler
+        with:
+          yaml-file: "config.yml"
+
+      - run: echo "${{ toJson(steps.yamler) }}"
+      - name: Slack Notification Success
+        if: ${{ success() }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: qa
+          SLACK_ICON: https://avatars3.githubusercontent.com/u/75539895
+          SLACK_MESSAGE: 'QA Theme is ready for preview at https://${{ steps.yamler.outputs.qa__store }}?preview_theme_id=${{ steps.yamler.outputs.qa__theme_id }} :rocket:'
+          SLACK_TITLE: Message
+          SLACK_USERNAME: Molsoft Automation
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Slack notification failure
+        if: ${{ failure() }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: qa
+          SLACK_COLOR: "danger"
+          SLACK_ICON: https://avatars3.githubusercontent.com/u/75539895
+          SLACK_MESSAGE: 'Oh no, something happened! :disappointed: Take a look at the action to see the issue.'
+          SLACK_TITLE: Message
+          SLACK_USERNAME: Molsoft Automation
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}

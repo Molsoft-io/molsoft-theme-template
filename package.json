@@ -9,7 +9,10 @@
     "babel-core": "6.26.3"
   },
   "dependencies": {
-    "molsoft-tools": "github:molsoft-io/molsoft-tools"
+    "molsoft-tools": "github:molsoft-io/molsoft-tools",
+    "multilingual-module": "githbub:molsoft-io/multilingual-module"
   },
-  "scripts": {}
+  "scripts": {
+    "translate": "multilingual-theme-converter"
+  }
 }
