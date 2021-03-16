@@ -6,7 +6,7 @@ on:
 
 jobs:
   context:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Dump GitHub context
         env:
@@ -16,7 +16,7 @@ jobs:
    
   build:
     if: (github.event.pull_request.base.ref == 'development' || github.event.pull_request.base.ref == 'Development') && github.event.review.state == 'approved'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     
     steps:
       - uses: actions/checkout@v2
@@ -32,7 +32,7 @@ jobs:
           MERGE_LABELS:  
 
       - name: Install ThemeKit
-        run: curl -s https://shopify.github.io/themekit/scripts/install.py | sudo python
+        run: curl -s https://raw.githubusercontent.com/Shopify/themekit/master/scripts/install.py | sudo python
 
       - uses: fregante/setup-git-token@v1
         with:
